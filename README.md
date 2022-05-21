@@ -1,0 +1,2 @@
+# WebDevQuiz
+In the online quiz seven questions on web development are asked to users and they have to answer all the questions within 70 seconds. The quiz description is on the home page which has a start button on it . Each question has two buttons : STOP and NEXT. After the time is over it will display the show result button instead of next. When you click the show result button it will show your score.The result page has score and go to the home button. 
