@@ -3,11 +3,11 @@
 class QuizElementsHelper {
   /**
    *
-   * @param app {Element} - the element of the whole app
-   * @param quizCard {Element} - the wrapper of the quiz details
-   * @param questionCard {Element} - the wrapper of the questions card
-   * @param resultCard {Element} - the wrapper of the result card
-   * @param quiz {Quiz} - an instance of the Quiz class
+   *  app {Element} - the element of the whole app
+   *  quizCard {Element} - the wrapper of the quiz details
+   *  questionCard {Element} - the wrapper of the questions card
+   *  resultCard {Element} - the wrapper of the result card
+   *  quiz {Quiz} - an instance of the Quiz class
    */
   constructor(app, quizCard, questionCard, resultCard, quiz) {
     this.app = app;
@@ -142,7 +142,7 @@ class QuizElementsHelper {
 
   /**
    * Handle the visibility of the result card
-   * @param result - the object of quiz result thet contains score property
+   * result - the object of quiz result thet contains score property
    */
   showResultCard(result) {
     this.hideQuestionsCard();
@@ -180,7 +180,6 @@ class QuizElementsHelper {
   /**
    * initialize the quiz time progress on every time that quiz starts
    * to control the progressbar and remaining time
-   * @private
    */
   _setProgressTicker() {
     this.remainingTimeInterval = setInterval(() => {
@@ -208,7 +207,7 @@ class QuizElementsHelper {
 
   /**
    * this method putting the question in the question card
-   * @param question - the object of the question that received from this.quiz
+   * question - the object of the question that received from this.quiz
    */
   parseNextQuestion(question) {
     const selectedOption = document.querySelector(
